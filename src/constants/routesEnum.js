@@ -1,4 +1,4 @@
 export const routesEnum = {
-    HOME: '/inicio',
+    HOME: '/',
     NOT_FOUND: '/*'
 }
