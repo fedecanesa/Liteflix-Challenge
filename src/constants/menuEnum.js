@@ -6,6 +6,6 @@ export const menuTitles = {
     POPULAR: 'populares',
     MY_MOVIES: 'mis películas',
     MY_LIST: 'mi lista',
-    ADD_MOVIES: 'agregar película',
+    ADD_MOVIES: '+ agregar película',
     SIGN_OFF: 'cerrar sesión',
 }
