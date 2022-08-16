@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Challenge for "Litebox". The project consists of the development of a dynamic Film Catalog.
 
-## Available Scripts
+It should list a featured movie, and popular movies from a public API.
 
-In the project directory, you can run:
+However, the catalog can be updated by the user, being able to add new movies to the “My movies” category. There is no endpoint to add new movies, just save images to localStorage.
 
-### `npm start`
+## Technology used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   ### React.js
+    -   ###### React Js
+    -   ###### Redux Toolkit
+    -   ###### SaSS
+    -   ###### Axios
+    -   ###### MUI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+-   Install npm dependencies: `npm install or yarn install`
+-   Run app: `npm start or yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design
 
-### `npm run build`
+The Desktop and Mobile design prototype is available in Figma, you can enter in this link: https://www.figma.com/file/8IrWHW2aUQZN6ILycX6ug7/Web-Versi%C3%B3n-Standar?node-id=0 %3A1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All the elements present in the design must be laid out with their corresponding interactions and states (Hovers).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The only functionality that requires logic and implementation is "Add Movie", the rest of the menu buttons are simply illustrative and do not need to fulfill any function but should be laid out, as they appear in the design.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development
 
-### `npm run eject`
+The add movies functionality should simply be able to upload an image and its title and then list that movie in the “My Movies” category (accessed via the Popular / My Movies dropdown).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Public API Endpoints
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Featured Movie**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**[GET]** [https://api.themoviedb.org/3/movie/now_playing?api_key=6f26fd536dd6192ec8a57e94141f8b20](https://api.themoviedb.org/3/movie/now_playing?api_key=6f26fd536dd6192ec8a57e94141f8b20)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Popular (List the first 4 Movies)**
 
-## Learn More
+**[GET] [**https://api.themoviedb.org/3/movie/popular?api_key=6f26fd536dd6192ec8a57e94141f8b20](https://api.themoviedb.org/3/movie/popular?api_key=6f26fd536dd6192ec8a57e94141f8b20)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_Information about the use of images:_ [https://developers.themoviedb.org/3/getting-started/images](https://developers.themoviedb.org/3/getting-started/images)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deploy
