@@ -43,7 +43,7 @@ const Progressbar = ({
             <div className='progress__loadingContainer'>
                 {
                     error
-                        ? <h4><span>¡ERROR!</span> NO SE PUDO CARGAR LA PELÍCULA</h4>
+                        ? <div className='loadingContainer__text'><h4><span>¡ERROR!</span> NO SE PUDO CARGAR LA PELÍCULA</h4></div>
                         : progress === 100
                             ? <div className='loadingContainer__text'><h4><span>{progress}</span>% cargado </h4></div>
                             : <div className='loadingContainer__text'><h4>Cargando <span>{progress}</span>%</h4></div>

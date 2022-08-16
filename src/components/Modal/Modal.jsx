@@ -48,11 +48,9 @@ const Modal = ({ handlerModal, handlerMenu }) => {
         if (newFile) {
             let file = newFile;
             let reader = new FileReader();
-            //reader.readAsText(file);
             reader.readAsDataURL(file)
             reader.onload = function () {
                 setNewMovie({ ...newMovie, image: reader.result })
-                //window.localStorage.setItem("imageLoad", reader.result)
             };
             reader.onerror = function () {
                 console.log(reader.error);
