@@ -1,0 +1,148 @@
+@import "../../styles/base.scss";
+.menu {
+    background: $black__background--menu;
+    height: 100vh;
+    padding: 28px 103px 0 88px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 761px;
+    z-index: 1000;
+
+    .menu__nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .menu__nave--close {
+            cursor: pointer;
+        }
+        .menu__nav--user {
+            align-items: center;
+            display: flex;
+            .menu__nav--notifications {
+                cursor: pointer;
+                margin: 0 40px;
+                position: relative;
+                .oval {
+                    bottom: 94.74%;
+                    left: 57.53%;
+                    position: absolute;
+                    right: 12.85%;
+                    top: 4.29%;
+                }
+            }
+            .menu__nav--userProfile {
+                cursor: pointer;
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .menu__list {
+        color: $withe__color;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+
+        letter-spacing: 4px;
+        line-height: 22px;
+        list-style: none;
+        padding-top: 64px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        .menu__list--li {
+            cursor: pointer;
+            margin: 40px 0;
+            transition: 0.5s ease;
+            width: max-content;
+            &:hover {
+                font-size: 24px;
+            }
+        }
+
+        .menu__list--add {
+            cursor: pointer;
+            font-weight: 700;
+            margin: 72px 0;
+            transition: 0.5s ease;
+            transition: 1s ease;
+            width: max-content;
+            &:hover {
+                font-size: 24px;
+            }
+            img {
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        background: $black__strong;
+        height: 812px;
+        min-width: 375px;
+        padding: 16px 24px 0 24px;
+        width: 375px;
+
+        .menu__nav {
+            .menu__nave--close {
+                img {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+            .menu__nav--logo {
+                .header__logo--p {
+                    color: $main__color;
+                    cursor: pointer;
+                    font-size: 28px;
+
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 4px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    b {
+                        font-weight: 700;
+                    }
+                }
+            }
+            .menu__nav--userProfile {
+                cursor: pointer;
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .menu__list {
+            font-size: 16px;
+            line-height: 16px;
+            padding-top: 64px;
+
+            .menu__list--li {
+                &:hover {
+                    font-size: 18px;
+                }
+            }
+
+            .menu__list--add {
+                cursor: pointer;
+                margin: 65px 0;
+                &:hover {
+                    font-size: 18px;
+                }
+                img {
+                    height: 14px;
+                    margin-right: 8px;
+                    width: 14px;
+                }
+            }
+        }
+    }
+}
