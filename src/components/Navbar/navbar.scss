@@ -1,0 +1,113 @@
+@import "../../styles/base.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 104px 0 103px;
+    transition: 1s ease;
+    width: 100%;
+    .header__logo {
+        display: flex;
+        .header__logo--p {
+            color: $main__color;
+            cursor: pointer;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 4px;
+            line-height: 34px;
+            text-transform: uppercase;
+            b {
+                font-weight: 700;
+            }
+        }
+        .header__logo--button {
+            align-items: center;
+            background-color: transparent;
+            border: none;
+
+            color: $withe__color;
+            cursor: pointer;
+            display: flex;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+
+            letter-spacing: 4px;
+            line-height: 18px;
+            margin-left: 64px;
+            text-transform: uppercase;
+            img {
+                margin-right: 12px;
+            }
+        }
+    }
+    .header__nav {
+        align-items: center;
+        display: flex;
+        .header__nav--notifications {
+            margin: 0 40px;
+            position: relative;
+            .oval {
+                bottom: 94.74%;
+                left: 57.53%;
+                position: absolute;
+                right: 12.85%;
+                top: 4.29%;
+            }
+        }
+        .header__nav--userProfile {
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .header__nav--notifications,
+        .header__nav--userProfile,
+        .header__nav--menu {
+            cursor: pointer;
+        }
+    }
+
+    .header__nav--menuMobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .header__logo--p {
+            color: $main__color;
+            cursor: pointer;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 4px;
+            line-height: 28px;
+            text-transform: uppercase;
+            transition: 1s ease;
+
+            b {
+                font-weight: 700;
+            }
+        }
+        .header__nav--userProfileMobile {
+            cursor: pointer;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 35px 24px 0 24px;
+        .header__nav--menuMobile {
+            .header__nav--menu {
+                img {
+                    cursor: pointer;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+}
