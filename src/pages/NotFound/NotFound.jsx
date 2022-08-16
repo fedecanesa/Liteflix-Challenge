@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './notFound.scss';
 
-const NotFound = props => {
+const NotFound = () => {
     const navigate = useNavigate();
     const backHome = () => {
         navigate('/')
@@ -25,6 +25,8 @@ const NotFound = props => {
     )
 }
 
-NotFound.propTypes = {}
+NotFound.propTypes = {
+    backHome: PropTypes.func
+}
 
 export default NotFound
