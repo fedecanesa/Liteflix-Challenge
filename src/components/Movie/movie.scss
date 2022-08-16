@@ -1,0 +1,167 @@
+@import "../../styles/base.scss";
+.movie {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    display: flex;
+    height: 146px;
+    transition: 1s ease;
+    width: 220px;
+    .movie__container {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 22.78%,
+            #000000 122.69%
+        );
+        height: 146px;
+        transition: 2s ease;
+        width: 220px;
+        .movie__play {
+            display: flex;
+            justify-content: center;
+            padding-top: 32px;
+            width: 100%;
+            img {
+                padding-top: 7px;
+                &:hover {
+                    animation-duration: 300ms;
+                    animation-timing-function: ease-out;
+                }
+            }
+        }
+        h4 {
+            color: $withe__color;
+            display: flex;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            justify-content: center;
+            letter-spacing: 4px;
+            line-height: 16px;
+            margin-top: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+    }
+
+    .movie__container--myMovies {
+        position: relative;
+        z-index: 100;
+        .p {
+            cursor: pointer;
+            position: absolute;
+        }
+    }
+    .movie__container--over {
+        background: $black__background--movie;
+        height: 146px;
+        width: 220px;
+
+        .container__display {
+            align-items: center;
+            display: flex;
+            margin: 0 16px 0 16px;
+            padding-top: 60px;
+
+            .container__display--img {
+                margin-right: 10px;
+                img {
+                    &:hover {
+                        background: url("../../assets/play2.png");
+                        cursor: pointer;
+                    }
+                }
+            }
+            h4 {
+                color: $withe__color;
+                display: flex;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                justify-content: center;
+                letter-spacing: 4px;
+                line-height: 16px;
+                text-align: center;
+                text-overflow: ellipsis;
+                text-transform: uppercase;
+                width: max-content;
+            }
+        }
+        .container__data {
+            display: flex;
+            margin: 20px 16px 0 16px;
+            .container__data--ranking {
+                img {
+                    border-radius: 0.2px;
+                    height: 12px;
+                    margin-right: 6px;
+                    width: 12px;
+                }
+                span {
+                    color: $withe__color;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    line-height: 12px;
+                }
+            }
+            .container__data--year {
+                color: $withe__color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 2px;
+                line-height: 12px;
+                margin-left: auto;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.over {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 146px;
+    width: 220px;
+}
+
+@media (max-width: 1000px) {
+    .movie {
+        height: 172px;
+        margin: auto auto 17px auto;
+        width: 327px;
+        .movie__container {
+            height: 172px;
+            width: 327px;
+            .movie__play {
+                padding-top: 56px;
+                img {
+                    height: 48px;
+                    width: 48px;
+                    &:hover {
+                        animation-duration: 300ms;
+                        animation-timing-function: ease-out;
+                        background: rgba(36, 36, 36, 0.5);
+                    }
+                }
+            }
+        }
+        .movie__container--over {
+            height: 172px;
+            width: 327px;
+        }
+    }
+
+    .over {
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 172px;
+        width: 327px;
+    }
+}
