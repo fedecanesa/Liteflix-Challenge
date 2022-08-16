@@ -7,7 +7,8 @@ import {
     routesEnum
 } from "../constants/routesEnum";
 import {
-    Home
+    Home,
+    NotFound
 } from '../pages';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path={routesEnum.HOME} element={<Home />} />
+                <Route path={routesEnum.NOT_FOUND} element={<NotFound />} />
             </Routes>
         </BrowserRouter >
     );
