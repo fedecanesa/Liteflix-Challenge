@@ -1,0 +1,22 @@
+@import "../../styles/base.scss";
+
+.layout {
+    background: $black__strong;
+    background-color: #242424;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 932px;
+    width: 100vw;
+    z-index: 1000;
+}
+
+@media (max-width: 1000px) {
+    .layout {
+        background-color: #242424;
+        background-position: top;
+        background-size: cover;
+        height: 585px;
+        min-height: 1585px;
+    }
+}
