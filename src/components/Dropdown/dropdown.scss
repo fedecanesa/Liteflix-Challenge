@@ -1,0 +1,130 @@
+@import "../../styles/base.scss";
+.dropdown {
+    position: relative;
+    z-index: 500;
+    .dropdown__filter {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .dropdown__filter--h4 {
+            color: $withe__color;
+            display: flex;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            height: 18px;
+            letter-spacing: 2px;
+            line-height: 18px;
+            margin-right: 11px;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+                margin-left: 10px;
+                text-transform: uppercase;
+                width: max-content;
+            }
+        }
+        img {
+            cursor: pointer;
+            height: 5.545572280883789px;
+            width: 11.091144561767578px;
+        }
+    }
+
+    .menuDropdown {
+        background: $black__strong;
+        height: 96px;
+        left: 0;
+        position: absolute;
+        top: 38px;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+
+        visibility: hidden;
+        width: 241px;
+
+        .rectangle {
+            background: $black__strong;
+            height: 12px;
+            left: 206.49px;
+            position: absolute;
+            top: -7px;
+            transform: rotate(45deg);
+            width: 12px;
+        }
+        .menuDropdown__options {
+            padding: 24px;
+
+            ul {
+                position: relative;
+                option {
+                    color: $withe__color;
+                    cursor: pointer;
+                    display: flex;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    line-height: 16px;
+                    margin-bottom: 16px;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+                img {
+                    height: 8px;
+                    left: 188px;
+                    position: absolute;
+                    width: 12px;
+                }
+                .popular {
+                    left: 188px;
+                    top: 2px;
+                }
+                .mis_peliculas {
+                    left: 188px;
+                    top: 38px;
+                }
+                .selected {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .active {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1000px) {
+    .dropdown {
+        width: 100%;
+        .dropdown__filter {
+            margin-bottom: 27px;
+        }
+        .menuDropdown {
+            height: 112px;
+            left: 0;
+            margin: auto;
+            right: 0;
+            width: 327px;
+            .menuDropdown__options {
+                ul {
+                    img {
+                        left: 268px;
+                    }
+                    .popular,
+                    .mis_peliculas {
+                        left: 268px;
+                    }
+                }
+            }
+        }
+        .rectangle {
+            left: 247.49px;
+        }
+    }
+}
