@@ -45,3 +45,5 @@ The add movies functionality should simply be able to upload an image and its ti
 _Information about the use of images:_ [https://developers.themoviedb.org/3/getting-started/images](https://developers.themoviedb.org/3/getting-started/images)
 
 ## Deploy
+
+https://liteflix-app.netlify.app/
