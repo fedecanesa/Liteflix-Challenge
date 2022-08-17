@@ -1,6 +1,6 @@
 @import "../../styles/base.scss";
 .menu {
-    background: $black__background--menu;
+    background: $black__strong;
     height: 100vh;
     padding: 28px 103px 0 88px;
     position: absolute;
@@ -84,7 +84,8 @@
 @media (max-width: 1000px) {
     .menu {
         background: $black__strong;
-        height: 812px;
+        height: 100vh;
+        min-height: 812px;
         min-width: 375px;
         padding: 16px 24px 0 24px;
         width: 375px;

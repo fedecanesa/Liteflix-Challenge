@@ -2,7 +2,6 @@
 
 .mainTitle {
     color: $main__color;
-    font-size: 10vw;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 16px;
@@ -14,7 +13,6 @@
 @media (max-width: 1000px) {
     .mainTitle {
         display: flex;
-        font-size: 9vw;
         justify-content: center;
         letter-spacing: 2vw;
         line-height: 10vw;

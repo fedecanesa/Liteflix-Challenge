@@ -93,7 +93,7 @@ const Home = () => {
             getPopularMovies();
         }, 3200);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [myMovies]);
+    }, []);
 
 
     return (
@@ -104,7 +104,7 @@ const Home = () => {
             </Layout>
             :
             <>
-                <CustomCursor /> 
+                <CustomCursor />
                 <div
                     className='home'
                     style={

@@ -75,7 +75,6 @@ const Modal = ({ handlerModal, handlerMenu }) => {
                 {
                     width <= 1000 &&
                     <Navbar onClick={handlerMenu} />
-
                 }
                 <div className='modal__header'>
                     {

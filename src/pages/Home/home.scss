@@ -6,7 +6,7 @@
     height: 100vh;
     min-height: 932px;
     width: 100%;
-
+    transition: 1s ease;
     .main__container {
         display: flex;
         height: 682px;
@@ -15,7 +15,7 @@
         width: 100%;
         .section__container {
             margin-bottom: 76px;
-            margin-top: auto;
+            margin-top: 368px;
             padding-right: 125px;
             width: 100%;
             .section__container--h2 {
