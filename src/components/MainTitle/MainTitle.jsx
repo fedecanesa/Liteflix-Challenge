@@ -9,10 +9,10 @@ const MainTitle = ({ children }) => {
         <h1
             className="mainTitle"
             style={
-                width <= 1000
-                    ? children?.length > 10
-                        ? { fontSize: '8vw' }
-                        : { fontSize: '10vw' }
+                width >= 1000
+                    ? children?.length > 12
+                        ? { fontSize: '6vw' }
+                        : { fontSize: '8vw' }
                     : { fontSize: '8vw' }
             }
         >
