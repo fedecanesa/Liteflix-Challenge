@@ -32,7 +32,7 @@ import './home.scss';
 
 const Home = () => {
     const dispatch = useDispatch();
-    const { isLoading, heroMovie, myMovies } = useSelector((state) => state?.movies);
+    const { isLoading, heroMovie } = useSelector((state) => state?.movies);
     const [isOpenMenu, setIsOpenMenu] = useState(false);
     const [isOpenModal, setIsOpenModal] = useState(false)
     const { width } = useScreenSize();
