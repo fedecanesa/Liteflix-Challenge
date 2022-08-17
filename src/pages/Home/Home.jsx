@@ -5,6 +5,7 @@ import {
 } from '../../service/movies.service';
 import {
     Button,
+    CustomCursor,
     Dropdown,
     Layout,
     Loader,
@@ -103,6 +104,7 @@ const Home = () => {
             </Layout>
             :
             <>
+                <CustomCursor /> 
                 <div
                     className='home'
                     style={

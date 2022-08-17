@@ -1,4 +1,5 @@
 import Button from "./Button/Button";
+import CustomCursor from "./CustomCursor/CustomCursor";
 import Dropdown from "./Dropdown/Dropdown";
 import Layout from "./Layout/Layout";
 import Loader from "./Loader/Loader";
@@ -12,6 +13,7 @@ import Progressbar from "./Progressbar/Progressbar";
 
 export {
     Button,
+    CustomCursor,
     Dropdown,
     Layout,
     Loader,
